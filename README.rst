@@ -50,7 +50,7 @@ This theme will help us configure iTerm2 to display information in a convenient 
 
     git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
-1. Configure iTerm2
+7. Configure iTerm2
 -------------------
 Working with iTerm2 settings.
 
@@ -75,7 +75,7 @@ iTerm2 Settings -> Profiles -> Text -> Font (find SourceCodePro+Powerline...) AN
 7.4 Statusbar
 ~~~~~~~~~~~~~
 
-Profiles -> Session (check Status bar enabled) AND Configure Status Bar to display what you want. I use cpu + ram AND configure the Auto-Rainbow: Light Colors. Then select "Advanced" and change the background color (use color picker and pick color of iterm window)
+iTerm2 Settings -> Profiles -> Session (check Status bar enabled) AND Configure Status Bar to display what you want. I use cpu + ram AND configure the Auto-Rainbow: Light Colors. Then select "Advanced" and change the background color (use color picker and pick color of iterm window)
 Then go to Settings -> Appearance and change the 'Status bar location' to 'Bottom'.
 
 7.5 Apply powerlevel10k
@@ -106,14 +106,14 @@ Open .zshrc in the plugins variable (for now it should only include 'git') add z
 
     https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-Open .zshrc in the plugins variable (for now it should only include 'git') add zsh-syntax-highlighting !!! no comma between plugins in tuple.
+Open .zshrc in the plugins variable add zsh-syntax-highlighting. At this step plugins variable should look like this: plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
 8.3 Web-search from terminal with google command
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Open .zshrc and add web-search plugin to plugins variable: plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
-9. Drop-down mode
+1. Drop-down mode
 -----------------
 9.1 Configure shortcut 
 ~~~~~~~~~~~~~~~~~~~~~~
