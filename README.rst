@@ -133,4 +133,4 @@ This way it will always be available by the Ctrl+~ shortcut and if you need the 
 10. Other useful settings
 -------------------------
 Open .zshrc and add: alias ll='ls -lG'
-This enables an ll command
+This enables an 'll' terminal command.
