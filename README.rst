@@ -4,15 +4,17 @@ Below steps are in support of a YouTube video: link!!!!!
 
 1. Install xcode developer tools.
 ----------------------------------
+Required step for anything related to programming.
+
 .. code-block::
-   :caption: in terminal
 
     xcode-select --install
        
 2. Install homebrew
 -------------------
+So-called missing package manager for MacOS or linux systems. It is just a convenient way to install many different development packages onto your machine.
+
 .. code-block::
-   :caption: in terminal
 
     cd ~/Downloads
     mkdir homebrew
@@ -21,19 +23,19 @@ Below steps are in support of a YouTube video: link!!!!!
 
 3. Install iTerm2
 -----------------
+Alternative to a built in Terminal, but it is far more configurable, which we need to get this look and feel of a drop down console.
 
 .. code-block::
-   :caption: in terminal
 
     brew install --cask iterm2
 
 4. Install oh-my-zsh theme
 --------------------------
+This is a theme for a terminal, which will make it look nice and add some useful features.
+
 .. code-block::
-   :caption: in terminal
 
     sh -c "$(curl -fsLS https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 
 5. Install custom font
 ----------------------
@@ -42,36 +44,43 @@ Below steps are in support of a YouTube video: link!!!!!
 
 6. Install powerline10k theme
 -----------------------------
+This theme will help us configure iTerm2 to display information in a convenient way.
+
 .. code-block::
-   :caption: in terminal
 
     git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
-7. Configure iTerm2
+1. Configure iTerm2
 -------------------
+Working with iTerm2 settings.
+
 7.1 Delete default profile
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
     
-in iTerm2 -> Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
+iTerm2 Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
 Delete default profile
-in iterm2 -> Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
+iTerm2 Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
 
 7.2 Configure colors
 ~~~~~~~~~~~~~~~~~~~~
+
 Copy contents of danil.itermcolors file in this repo then save this create your own 'user.itermcolors' file in your home directory and paste the contents of danil.itermcolors file there.
-Then go to iterm2 -> Settings -> Profiles -> Colors -> Color Presets -> Import (and chose this user.itermcolors file in the home dir) -> after import in Color Presets select this 'user' color theme
+iTerm2 Settings -> Profiles -> Colors -> Color Presets -> Import (and chose this user.itermcolors file in the home dir) -> after import in Color Presets select this 'user' color theme
 
 7.3 Configure fonts
 ~~~~~~~~~~~~~~~~~~~~
-Profiles -> Text -> Font (find SourceCodePro+Powerline...) AND check the 'Use ligatures' checkbox AND increase fontsize to 14
+
+iTerm2 Settings -> Profiles -> Text -> Font (find SourceCodePro+Powerline...) AND check the 'Use ligatures' checkbox AND increase fontsize to 14
 
 7.4 Statusbar
 ~~~~~~~~~~~~~
+
 Profiles -> Session (check Status bar enabled) AND Configure Status Bar to display what you want. I use cpu + ram AND configure the Auto-Rainbow: Light Colors. Then select "Advanced" and change the background color (use color picker and pick color of iterm window)
 Then go to Settings -> Appearance and change the 'Status bar location' to 'Bottom'.
 
 7.5 Apply powerlevel10k
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
 Open .zshrc
 Replace the ZSH_THEME="robbyrussell" with ZSH_THEME="powerlevel10k/powerlevel10k"
 Restart terminal and it will pop up with configuration wizard: answer No to first (font) question then logically to all other questions about icons appearance on the screen. To set up as featured use following settings: -> Rainbow -> Unicode -> 24-hour format -> Angled -> Sharp -> Flat -> One Line -> Compact -> Many icons -> Concise -> Verbose -> Yes
@@ -79,11 +88,13 @@ You can always re-run this configuration by terminal command: p10k configure
 
 8. Plugins for terminal
 -----------------------
+
 8.1 Autosuggestion plugin
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 This plugin will add the command autosuggestion to terminal which user can use with 'tab'
+
 .. code-block::
-    :caption: in terminal
+
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 Open .zshrc in the plugins variable (for now it should only include 'git') add zsh-autosuggestions !!! no comma between plugins in tuple.
@@ -92,7 +103,7 @@ Open .zshrc in the plugins variable (for now it should only include 'git') add z
 ~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block::
-    :caption: in terminal
+
     https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 Open .zshrc in the plugins variable (for now it should only include 'git') add zsh-syntax-highlighting !!! no comma between plugins in tuple.
@@ -106,18 +117,20 @@ Open .zshrc and add web-search plugin to plugins variable: plugins=(git zsh-auto
 -----------------
 9.1 Configure shortcut 
 ~~~~~~~~~~~~~~~~~~~~~~
-Settings -> Keys -> Hotkey -> Dedicated hotkey -> Ctrl+~ -> Check 'Floating Window'.
+iTerm2 Settings -> Keys -> Hotkey -> Dedicated hotkey -> Ctrl+~ -> Check 'Floating Window'.
+
 9.2 Further setup
 ~~~~~~~~~~~~~~~~~
-Go to Profiles -> Window -> Space (All Spaces) AND Screen (Screen with Cursor) AND set Transparrency to 5 AND check 'Hide after opening'
+iTerm2 Settings -> Profiles -> Window -> Space (All Spaces) AND Screen (Screen with Cursor) AND set Transparrency to 5 AND check 'Hide after opening'
+
 9.3 Open at computer startup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-With Spotlight -> Users & Groups and add iTerm2 to login items.
-Remove it from dock and Tab-Switcher menu: Settings -> Appearance -> check Exclude from Dock...
+With Spotlight open Users & Groups and add iTerm2 to login items.
+Remove it from dock and Tab-Switcher menu: iTerm2 Settings -> Appearance -> check Exclude from Dock...
 
 This way it will always be available by the Ctrl+~ shortcut and if you need the settings, use Cmd+, shortcut with console window opened
 
 10. Other useful settings
 -------------------------
 Open .zshrc and add: alias ll='ls -lG'
-This enables an ll command in terminal.
+This enables an ll command
