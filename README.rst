@@ -1,16 +1,16 @@
-* Guide for setting up ultimate Mac drop-down Quake-style terminal
-# in support of a YouTube video: link!!!!!
+Ultimate Mac drop-down Quake-style terminal setup
+=================================================
+Below steps are in support of a YouTube video: link!!!!!
 
-**1. Install xcode developer tools.
-
+1. Install xcode developer tools.
+----------------------------------
 .. code-block::
    :caption: in terminal
 
     xcode-select --install
        
-
-**2. Install homebrew
-
+2. Install homebrew
+-------------------
 .. code-block::
    :caption: in terminal
 
@@ -19,79 +19,105 @@
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
     sudo mv homebrew /opt/homebrew
 
-**3. Install iTerm2
-
-Next up install iTerm2 - this is an alternative to a built in Terminal, but it is far more configurable, which we need to get this look and feel of a drop down console.
+3. Install iTerm2
+-----------------
 
 .. code-block::
    :caption: in terminal
 
     brew install --cask iterm2
 
-Now to make it prettier - install oh-my-zsh theme. And this will affect all the terminals (builtin, iterm2, vscode terminal, and any other command line tool on your machine)
+4. Install oh-my-zsh theme
+--------------------------
+.. code-block::
+   :caption: in terminal
 
-```markdown
-# install oh-my-zsh (theme) - 
     sh -c "$(curl -fsLS https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
 
-Install font to make it prettier
-  in browser download font from here:   https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf
-  then open 'font book' with spotlight and drag&drop this font from downloads folder
 
-install iterm2 theme powerlevel10k which will help us configure iterm to display information efficiently.
+5. Install custom font
+----------------------
+5.1 In browser download font: https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf
+5.2 Open 'font book' on a mac (search 'font book' in spotlight) and drag&drop this font from downloads folder.
+
+6. Install powerline10k theme
+-----------------------------
+.. code-block::
+   :caption: in terminal
+
     git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
-Now let’s go into iterm2 settings and configure everything that is left.
-
+7. Configure iTerm2
+-------------------
+7.1 Delete default profile
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
+in iTerm2 -> Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
 Delete default profile
+in iterm2 -> Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
 
-# in iterm2 -> Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
+7.2 Configure colors
+~~~~~~~~~~~~~~~~~~~~
+Copy contents of danil.itermcolors file in this repo then save this create your own 'user.itermcolors' file in your home directory and paste the contents of danil.itermcolors file there.
+Then go to iterm2 -> Settings -> Profiles -> Colors -> Color Presets -> Import (and chose this user.itermcolors file in the home dir) -> after import in Color Presets select this 'user' color theme
 
-setup colors
-# my color map preset is here (just copy the contents of danil.itermcolors file: !!! LINK TO GITHUB REPO FILE ) then save this create your own 'user.itermcolors' file in your home directory and paste the contents of danil.itermcolors file there.
-# this can be done through terminal (when in home dir):
-    code danil.itermcolors # this will create this file in home dir
-    # and paste the contents of the danil.itermcolors from github
-# then go to iterm2 -> Settings -> Profiles -> Colors -> Color Presets -> Import (and chose this danil.itermcolors file in the home dir) -> after import in Color Presets select this 'danil' color theme
+7.3 Configure fonts
+~~~~~~~~~~~~~~~~~~~~
+Profiles -> Text -> Font (find SourceCodePro+Powerline...) AND check the 'Use ligatures' checkbox AND increase fontsize to 14
 
-Fonts
-# font: Profiles -> Text -> Font (find SourceCodePro+Powerline...) AND check the 'Use ligatures' checkbox AND increase fontsize to 14
+7.4 Statusbar
+~~~~~~~~~~~~~
+Profiles -> Session (check Status bar enabled) AND Configure Status Bar to display what you want. I use cpu + ram AND configure the Auto-Rainbow: Light Colors. Then select "Advanced" and change the background color (use color picker and pick color of iterm window)
+Then go to Settings -> Appearance and change the 'Status bar location' to 'Bottom'.
 
-Statusbar
-# statusbar: Profiles -> Session (check Status bar enabled) AND Configure Status Bar to display what you want. I use cpu + ram AND configure the Auto-Rainbow: Light Colors. Then select "Advanced" and change the background color (use color picker and pick color of iterm window)
-# then go to Settings -> Appearance and change the 'Status bar location' to 'Bottom'
+7.5 Apply powerlevel10k
+~~~~~~~~~~~~~~~~~~~~~~~~
+Open .zshrc
+Replace the ZSH_THEME="robbyrussell" with ZSH_THEME="powerlevel10k/powerlevel10k"
+Restart terminal and it will pop up with configuration wizard: answer No to first (font) question then logically to all other questions about icons appearance on the screen. To set up as featured use following settings: -> Rainbow -> Unicode -> 24-hour format -> Angled -> Sharp -> Flat -> One Line -> Compact -> Many icons -> Concise -> Verbose -> Yes
+You can always re-run this configuration by terminal command: p10k configure
 
-# set the downloaded theme powerlevel10k that we downloaded
-    code .zshrc
-# and replace the ZSH_THEME="robbyrussell" with ZSH_THEME="powerlevel10k/powerlevel10k"
-# restart and it will pop up with configuration wizard: answer No to first (font) question then logically to all other questions about icons appearance on the screen -> Rainbow -> Unicode -> 24-hour format -> Angled -> Sharp -> Flat -> One Line -> Compact -> Many icons -> Concise -> Verbose -> Yes
-# you can always re-run this configuration by terminal command: p10k configure
-
-PLUGINS
-# install autosuggestion plugin
+8. Plugins for terminal
+-----------------------
+8.1 Autosuggestion plugin
+~~~~~~~~~~~~~~~~~~~~~~~~~
+This plugin will add the command autosuggestion to terminal which user can use with 'tab'
+.. code-block::
+    :caption: in terminal
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-# in .zshrc in the plugins variable (for now it should only include 'git') add zsh-autosuggestions !!! no comma between plugins in tuple.
 
-# syntax-highlighting
+Open .zshrc in the plugins variable (for now it should only include 'git') add zsh-autosuggestions !!! no comma between plugins in tuple.
+
+8.2 yntax-highlighting
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block::
+    :caption: in terminal
     https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-# in .zshrc in the plugins variable (for now it should only include 'git') add zsh-syntax-highlighting !!! no comma between plugins in tuple.
 
-# web-search from terminal with google command
-# just add in .zshrc plugins(web-search)
+Open .zshrc in the plugins variable (for now it should only include 'git') add zsh-syntax-highlighting !!! no comma between plugins in tuple.
 
-Drop-down mode
-# configure shortcut Settings -> Keys -> Hotkey -> Dedicated hotkey -> Ctrl+~ -> Check 'Floating Window'.
-# then go to Profiles -> Window -> Space (All Spaces) AND Screen (Screen with Cursor) AND set Transparrency to 5 AND check 'Hide after opening'
-# Now set it to run every time you boot up your mac:
-# with Spotlight -> Users & Groups and add iTerm2 to login items
-# and remove it from dock and Tab-Switcher menu: Settings -> Appearance -> check Exclude from Dock...
-# This way it will always be available by the Ctrl+~ shortcut and if you need the settings, use Cmd+, shortcut with console window opened
+8.3 Web-search from terminal with google command
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# to remove yellow folder highlighting
-    chmod go-w
-# ------------------------------------------------------------------------------------------
+Open .zshrc and add web-search plugin to plugins variable: plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
-# OTHER .zshrc settings
-# ll terminal command
-    alias ll='ls -lG'
+9. Drop-down mode
+-----------------
+9.1 Configure shortcut 
+~~~~~~~~~~~~~~~~~~~~~~
+Settings -> Keys -> Hotkey -> Dedicated hotkey -> Ctrl+~ -> Check 'Floating Window'.
+9.2 Further setup
+~~~~~~~~~~~~~~~~~
+Go to Profiles -> Window -> Space (All Spaces) AND Screen (Screen with Cursor) AND set Transparrency to 5 AND check 'Hide after opening'
+9.3 Open at computer startup
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+With Spotlight -> Users & Groups and add iTerm2 to login items.
+Remove it from dock and Tab-Switcher menu: Settings -> Appearance -> check Exclude from Dock...
+
+This way it will always be available by the Ctrl+~ shortcut and if you need the settings, use Cmd+, shortcut with console window opened
+
+10. Other useful settings
+-------------------------
+Open .zshrc and add: alias ll='ls -lG'
+This enables an ll command in terminal.
