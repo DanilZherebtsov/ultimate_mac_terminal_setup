@@ -1,3 +1,5 @@
+.. image:: thumbnail.png
+
 Ultimate Mac drop-down Quake-style terminal setup
 =================================================
 Below steps are in support of a YouTube video: link!!!!!
