@@ -31,6 +31,7 @@ Required step for anything related to programming.
 So-called missing package manager for MacOS or linux systems. It is just a convenient way to install many different development packages onto your machine.
 
 .. code-block::
+    
     caption: For ARM macs
     
     cd ~/Downloads
@@ -39,6 +40,7 @@ So-called missing package manager for MacOS or linux systems. It is just a conve
     sudo mv homebrew /opt/homebrew
 
 .. code-block::
+
     caption: For intel macs
     
     cd ~/Downloads
