@@ -4,7 +4,12 @@ Ultimate Mac drop-down Quake-style terminal setup
 =================================================
 Below steps are in support of a YouTube video: link!!!!!
 
-1. Install xcode developer tools.
+0. Install text editor. I prefer Visual Studio Code
+Just google it and download and install on your machine from the official web-site.
+
+1. Create a .zshrc file in your home directory if you don't have one yet.
+
+2. Install xcode developer tools.
 ----------------------------------
 Required step for anything related to programming.
 
@@ -17,13 +22,30 @@ Required step for anything related to programming.
 So-called missing package manager for MacOS or linux systems. It is just a convenient way to install many different development packages onto your machine.
 
 .. code-block::
-
+    caption: For ARM macs
     cd ~/Downloads
     mkdir homebrew
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
     sudo mv homebrew /opt/homebrew
 
-3. Install iTerm2
+.. code-block::
+    caption: For intel macs
+    cd ~/Downloads
+    mkdir homebrew
+    curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+    sudo mv homebrew /usr/local/homebrew
+
+Add path to brew to your .zshrc file: 
+
+.. code-block::
+    caption: For ARM macs
+    export PATH=//homebrew/bin:$PATH
+
+.. code-block::
+    caption: For intel macs
+    export PATH=/usr/local/homebrew/bin:$PATH
+
+1. Install iTerm2
 -----------------
 Alternative to a built in Terminal, but it is far more configurable, which we need to get this look and feel of a drop down console.
 
@@ -136,3 +158,4 @@ This way it will always be available by the Ctrl+~ shortcut and if you need the 
 -------------------------
 Open .zshrc and add: alias ll='ls -lG'
 This enables an 'll' terminal command.
+
