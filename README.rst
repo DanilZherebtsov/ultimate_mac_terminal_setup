@@ -38,6 +38,7 @@ For ARM macs
     mkdir homebrew
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
     sudo mv homebrew /opt/homebrew
+    export PATH="/opt/homebrew/bin:$PATH"
 
 For intel macs
 ~~~~~~~~~~~~~~
@@ -47,15 +48,6 @@ For intel macs
     mkdir homebrew
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
     sudo mv homebrew /usr/local/homebrew
-
-Add path to brew to your .zshrc file. Open it with your text editor and insert the following line at the end of the file:
-
-For ARM macs
-~~~~~~~~~~~~
-    export PATH="/opt/homebrew/bin:$PATH"
-
-For intel macs
-~~~~~~~~~~~~~~
     export PATH="/usr/local/homebrew/bin:$PATH"
 
 5. Install iTerm2
@@ -74,7 +66,20 @@ This is a theme for a terminal, which will make it look nice and add some useful
 
     sh -c "$(curl -fsLS https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-6. Install custom font
+7. Configure path to brew in .zshrc file
+-----------------------------------------
+Add path to brew to your .zshrc file. Open it with your text editor and insert the following line at the end of the file:
+
+For ARM macs
+~~~~~~~~~~~~
+    export PATH="/opt/homebrew/bin:$PATH"
+
+For intel macs
+~~~~~~~~~~~~~~
+    export PATH="/usr/local/homebrew/bin:$PATH"
+
+
+8. Install custom font
 ----------------------
 5.1 In browser download font: https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf
 5.2 Open 'font book' on a mac (search 'font book' in spotlight) and drag&drop this font from downloads folder.
