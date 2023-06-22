@@ -58,7 +58,7 @@ For intel macs
 ~~~~~~~~~~~~~~
     export PATH="/usr/local/homebrew/bin:$PATH"
 
-1. Install iTerm2
+5. Install iTerm2
 -----------------
 Alternative to a built in Terminal, but it is far more configurable, which we need to get this look and feel of a drop down console.
 
@@ -66,7 +66,7 @@ Alternative to a built in Terminal, but it is far more configurable, which we ne
 
     brew install --cask iterm2
 
-4. Install oh-my-zsh theme
+6. Install oh-my-zsh theme
 --------------------------
 This is a theme for a terminal, which will make it look nice and add some useful features.
 
@@ -74,7 +74,7 @@ This is a theme for a terminal, which will make it look nice and add some useful
 
     sh -c "$(curl -fsLS https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-5. Install custom font
+6. Install custom font
 ----------------------
 5.1 In browser download font: https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf
 5.2 Open 'font book' on a mac (search 'font book' in spotlight) and drag&drop this font from downloads folder.
