@@ -32,7 +32,7 @@ So-called missing package manager for MacOS or linux systems. It is just a conve
 
 For ARM macs
 ~~~~~~~~~~~~
-.. code-block::
+.. code-block:: zzz
     
     cd ~/Downloads
     mkdir homebrew
@@ -50,12 +50,12 @@ For intel macs
 
 Add path to brew to your .zshrc file. Open it with your text editor and insert the following line at the end of the file:
 
-.. code-block::
-    caption: For ARM macs
+.. code-block:: zzz
+
     export PATH=//homebrew/bin:$PATH
 
 .. code-block::
-    caption: For intel macs
+
     export PATH=/usr/local/homebrew/bin:$PATH
 
 1. Install iTerm2
