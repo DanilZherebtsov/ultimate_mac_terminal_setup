@@ -6,12 +6,12 @@ Below steps are in support of a YouTube video: link!!!!!
 
 1. Install text editor. 
 -----------------------
-I prefer Visual Studio Code
-Just google it and download and install on your machine from the official web-site.
+I prefer Visual Studio Code.
+Just google it, download and install on your machine from the official web-site.
 
-2. Create a .zshrc file
+1. Create a .zshrc file
 -----------------------
-Check your home directory with finder, make sure to display hidden files with cmd+shift+. command.
+Check your home directory with finder, make sure to display hidden files with 'cmd+shift+.' command.
 If you don't have .zshrc file in your home directory, create it with touch command in terminal.
 
 .. code-block::
@@ -32,6 +32,7 @@ So-called missing package manager for MacOS or linux systems. It is just a conve
 
 .. code-block::
     caption: For ARM macs
+    
     cd ~/Downloads
     mkdir homebrew
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
@@ -39,6 +40,7 @@ So-called missing package manager for MacOS or linux systems. It is just a conve
 
 .. code-block::
     caption: For intel macs
+    
     cd ~/Downloads
     mkdir homebrew
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
