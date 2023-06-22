@@ -9,7 +9,7 @@ Below steps are in support of a YouTube video: link!!!!!
 I prefer Visual Studio Code.
 Just google it, download and install on your machine from the official web-site.
 
-1. Create a .zshrc file
+2. Create a .zshrc file
 -----------------------
 Check your home directory with finder, make sure to display hidden files with 'cmd+shift+.' command.
 If you don't have .zshrc file in your home directory, create it with touch command in terminal.
@@ -18,7 +18,7 @@ If you don't have .zshrc file in your home directory, create it with touch comma
 
     touch ~/.zshrc
 
-2. Install xcode developer tools.
+3. Install xcode developer tools.
 ----------------------------------
 Required step for anything related to programming.
 
@@ -52,17 +52,13 @@ Add path to brew to your .zshrc file. Open it with your text editor and insert t
 
 For ARM macs
 ~~~~~~~~~~~~
-.. code-block::
-
     export PATH="/opt/homebrew/bin:$PATH"
 
 For intel macs
 ~~~~~~~~~~~~~~
-.. code-block::
-
     export PATH="/usr/local/homebrew/bin:$PATH"
 
-5. Install iTerm2
+1. Install iTerm2
 -----------------
 Alternative to a built in Terminal, but it is far more configurable, which we need to get this look and feel of a drop down console.
 
