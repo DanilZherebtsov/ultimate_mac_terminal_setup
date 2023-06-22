@@ -99,9 +99,10 @@ Working with iTerm2 settings.
 7.1 Delete default profile
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
     
-iTerm2 Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
+    iTerm2 Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
+
 Delete default profile
-iTerm2 Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
+
 
 7.2 Configure colors
 ~~~~~~~~~~~~~~~~~~~~
@@ -128,7 +129,7 @@ Replace the ZSH_THEME="robbyrussell" with ZSH_THEME="powerlevel10k/powerlevel10k
 Restart terminal and it will pop up with configuration wizard: answer No to first (font) question then logically to all other questions about icons appearance on the screen. To set up as featured use following settings: -> Rainbow -> Unicode -> 24-hour format -> Angled -> Sharp -> Flat -> One Line -> Compact -> Many icons -> Concise -> Verbose -> Yes
 You can always re-run this configuration by terminal command: p10k configure
 
-8. Plugins for terminal
+1. Plugins for terminal
 -----------------------
 
 8.1 Autosuggestion plugin
