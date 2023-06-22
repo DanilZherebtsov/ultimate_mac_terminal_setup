@@ -30,14 +30,18 @@ Required step for anything related to programming.
 -------------------
 So-called missing package manager for MacOS or linux systems. It is just a convenient way to install many different development packages onto your machine.
 
-.. code-block::For ARM macs:
+For ARM macs
+~~~~~~~~~~~~
+.. code-block::
     
     cd ~/Downloads
     mkdir homebrew
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
     sudo mv homebrew /opt/homebrew
 
-.. code-block::For intel macs:
+For intel macs
+~~~~~~~~~~~~~~
+.. code-block::
        
     cd ~/Downloads
     mkdir homebrew
