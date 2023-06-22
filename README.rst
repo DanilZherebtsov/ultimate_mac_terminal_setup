@@ -101,12 +101,10 @@ Delete default profile
     
     iTerm2 Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
 
-Delete default profile
-
 Configure colors
 ~~~~~~~~~~~~~~~~~~~~
 
-Copy contents of danil.itermcolors file in this repo then save this create your own 'user.itermcolors' file in your home directory and paste the contents of danil.itermcolors file there.
+Copy contents of danil.itermcolors file in this repo then create your own 'user.itermcolors' file in your home directory and paste the contents of danil.itermcolors file there.
 
     iTerm2 Settings -> Profiles -> Colors -> Color Presets -> Import (and chose this user.itermcolors file in the home dir) -> after import in Color Presets select this 'user' color theme
 
@@ -129,7 +127,7 @@ Replace the ZSH_THEME="robbyrussell" with ZSH_THEME="powerlevel10k/powerlevel10k
 Restart terminal and it will pop up with configuration wizard: answer No to first (font) question then logically to all other questions about icons appearance on the screen. To set up as featured use following settings: -> Rainbow -> Unicode -> 24-hour format -> Angled -> Sharp -> Flat -> One Line -> Compact -> Many icons -> Concise -> Verbose -> Yes
 You can always re-run this configuration by terminal command: p10k configure
 
-11. Plugins for terminal
+1.  Plugins for terminal
 ------------------------
 These will make life easier
 
@@ -148,7 +146,7 @@ syntax-highlighting
 
 .. code-block::
 
-    https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 Open .zshrc in the plugins variable add zsh-syntax-highlighting. At this step plugins variable should look like this: plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
@@ -165,11 +163,18 @@ iTerm2 Settings -> Keys -> Hotkey -> Dedicated hotkey -> Ctrl+~ -> Check 'Floati
 
 Further setup
 ~~~~~~~~~~~~~
-iTerm2 Settings -> Profiles -> Window -> Space (All Spaces) AND Screen (Screen with Cursor) AND set Transparrency to 5 AND check 'Hide after opening'
+    iTerm2 Settings -> Profiles -> Window -> 
+        *Space* (All Spaces) 
+        *Screen* (Screen with Cursor) 
+        Check 'Hide after opening'
+
+    In Profiles you will see a new profile *Hotkey Window* select it -> Window 
+        Make sure 'Use transparrency' is checked 
+        Change the 'Transparency' level to whatever suits you, I prefer 5
 
 Open at computer startup
 ~~~~~~~~~~~~~~~~~~~~~~~~
-With Spotlight open Users & Groups and add iTerm2 to login items.
+With Spotlight open 'Login Items' and add iTerm2 to login items.
 Remove it from dock and Tab-Switcher menu: iTerm2 Settings -> Appearance -> check Exclude from Dock...
 
 This way it will always be available by the Ctrl+~ shortcut and if you need the settings, use Cmd+, shortcut with console window opened
