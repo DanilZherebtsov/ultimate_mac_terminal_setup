@@ -1,14 +1,5 @@
 .. image:: thumbnail.png
 
-.. code-block::
-   :caption: A cool example
-
-       The output of this line starts with four spaces.
-
-.. code-block::
-
-       The output of this line has no spaces at the beginning.
-
 Ultimate Mac drop-down Quake-style terminal setup
 =================================================
 Below steps are in support of a YouTube video: link!!!!!
@@ -41,19 +32,19 @@ So-called missing package manager for MacOS or linux systems. It is just a conve
 
 .. code-block::
     :caption: For ARM macs
-
-    cd ~/Downloads
-    mkdir homebrew
-    curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
-    sudo mv homebrew /opt/homebrew
+    
+        cd ~/Downloads
+        mkdir homebrew
+        curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+        sudo mv homebrew /opt/homebrew
 
 .. code-block::
     :caption: For intel macs
 
-    cd ~/Downloads
-    mkdir homebrew
-    curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
-    sudo mv homebrew /usr/local/homebrew
+        cd ~/Downloads
+        mkdir homebrew
+        curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+        sudo mv homebrew /usr/local/homebrew
 
 Add path to brew to your .zshrc file. Open it with your text editor and insert the following line at the end of the file:
 
