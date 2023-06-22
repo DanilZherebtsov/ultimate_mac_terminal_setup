@@ -32,7 +32,7 @@ So-called missing package manager for MacOS or linux systems. It is just a conve
 
 For ARM macs
 ~~~~~~~~~~~~
-.. code-block:: zzz
+.. code-block::
     
     cd ~/Downloads
     mkdir homebrew
@@ -50,15 +50,19 @@ For intel macs
 
 Add path to brew to your .zshrc file. Open it with your text editor and insert the following line at the end of the file:
 
-.. code-block:: zzz
-
-    export PATH=//homebrew/bin:$PATH
-
+For ARM macs
+~~~~~~~~~~~~
 .. code-block::
 
-    export PATH=/usr/local/homebrew/bin:$PATH
+    export PATH="/opt/homebrew/bin:$PATH"
 
-1. Install iTerm2
+For intel macs
+~~~~~~~~~~~~~~
+.. code-block::
+
+    export PATH="/usr/local/homebrew/bin:$PATH"
+
+5. Install iTerm2
 -----------------
 Alternative to a built in Terminal, but it is far more configurable, which we need to get this look and feel of a drop down console.
 
