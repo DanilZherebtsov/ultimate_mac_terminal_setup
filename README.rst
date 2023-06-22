@@ -30,21 +30,21 @@ Required step for anything related to programming.
 -------------------
 So-called missing package manager for MacOS or linux systems. It is just a convenient way to install many different development packages onto your machine.
 
+For ARM macs:
 .. code-block::
-   :caption: For ARM macs
     
-       cd ~/Downloads
-       mkdir homebrew
-       curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
-       sudo mv homebrew /opt/homebrew
+    cd ~/Downloads
+    mkdir homebrew
+    curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+    sudo mv homebrew /opt/homebrew
 
+For intel macs:
 .. code-block::
-   :caption: For intel macs
        
-       cd ~/Downloads
-       mkdir homebrew
-       curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
-       sudo mv homebrew /usr/local/homebrew
+    cd ~/Downloads
+    mkdir homebrew
+    curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+    sudo mv homebrew /usr/local/homebrew
 
 Add path to brew to your .zshrc file. Open it with your text editor and insert the following line at the end of the file:
 
