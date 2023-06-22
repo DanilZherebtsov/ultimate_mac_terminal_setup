@@ -31,7 +31,6 @@ Required step for anything related to programming.
 So-called missing package manager for MacOS or linux systems. It is just a convenient way to install many different development packages onto your machine.
 
 For ARM macs:
-.. code-block::
     
     cd ~/Downloads
     mkdir homebrew
@@ -39,7 +38,6 @@ For ARM macs:
     sudo mv homebrew /opt/homebrew
 
 For intel macs:
-.. code-block::
        
     cd ~/Downloads
     mkdir homebrew
