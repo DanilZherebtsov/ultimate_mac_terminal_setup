@@ -32,6 +32,7 @@ So-called missing package manager for MacOS or linux systems. It is just a conve
 
 .. code-block::
     :caption: For ARM macs
+    
     cd ~/Downloads
     mkdir homebrew
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
@@ -39,6 +40,7 @@ So-called missing package manager for MacOS or linux systems. It is just a conve
 
 .. code-block::
     :caption: For intel macs
+
     cd ~/Downloads
     mkdir homebrew
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
