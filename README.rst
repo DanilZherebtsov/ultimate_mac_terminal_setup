@@ -177,7 +177,7 @@ Open at computer startup
 With Spotlight open 'Login Items' and add iTerm2 to login items.
 Remove it from dock and Tab-Switcher menu: iTerm2 Settings -> Appearance -> check Exclude from Dock...
 
-This way it will always be available by the Ctrl+~ shortcut and if you need the settings, use Cmd+, shortcut with console window opened
+This way it will always be available by the Ctrl+~ shortcut and if you need the settings, use 'Cmd+,' shortcut with console window opened
 
 1.  Other useful settings
 -------------------------
