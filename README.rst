@@ -4,10 +4,19 @@ Ultimate Mac drop-down Quake-style terminal setup
 =================================================
 Below steps are in support of a YouTube video: link!!!!!
 
-0. Install text editor. I prefer Visual Studio Code
+1. Install text editor. 
+-----------------------
+I prefer Visual Studio Code
 Just google it and download and install on your machine from the official web-site.
 
-1. Create a .zshrc file in your home directory if you don't have one yet.
+2. Create a .zshrc file
+-----------------------
+Check your home directory with finder, make sure to display hidden files with cmd+shift+. command.
+If you don't have .zshrc file in your home directory, create it with touch command in terminal.
+
+.. code-block::
+
+    touch ~/.zshrc
 
 2. Install xcode developer tools.
 ----------------------------------
@@ -17,7 +26,7 @@ Required step for anything related to programming.
 
     xcode-select --install
        
-2. Install homebrew
+4. Install homebrew
 -------------------
 So-called missing package manager for MacOS or linux systems. It is just a convenient way to install many different development packages onto your machine.
 
@@ -35,7 +44,7 @@ So-called missing package manager for MacOS or linux systems. It is just a conve
     curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
     sudo mv homebrew /usr/local/homebrew
 
-Add path to brew to your .zshrc file: 
+Add path to brew to your .zshrc file. Open it with your text editor and insert the following line at the end of the file:
 
 .. code-block::
     caption: For ARM macs
