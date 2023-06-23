@@ -123,7 +123,7 @@ Working with iTerm2 settings.
         Profiles
             Text
                 Font 
-                    dind ``SourceCodePro+Powerline...``
+                    find ``SourceCodePro+Powerline...``
                     
                     check the ``Use ligatures`` checkbox
                     
@@ -131,8 +131,19 @@ Working with iTerm2 settings.
 
  #. Statusbar
 
-    iTerm2 Settings -> Profiles -> Session (check Status bar enabled) AND Configure Status Bar to display what you want. I use cpu + ram AND configure the Auto-Rainbow: Light Colors. Then select "Advanced" and change the background color (use color picker and pick color of iterm window)
-    Then go to Settings -> Appearance and change the 'Status bar location' to 'Bottom'.
+    iTerm2 Settings
+        Profiles
+            Session 
+                check ``Status bar enabled`` 
+                configure Status Bar to display what you want, I use the following:
+                    cpu
+                    ram
+                    Auto-Rainbow -> Light Colors
+                Advanced
+                    change the background color (use color picker and pick color of iterm window)
+    Settings
+        Appearance
+            change the ``Status bar location`` to 'Bottom'.
 
  #. Apply powerlevel10k
 
