@@ -243,8 +243,15 @@ Minor things that are very convenient
     
     If you need the settings, use ``Cmd+,``` shortcut when terminal window is on screen
 
-13. Change font in VSCode
--------------------------
-If you open Visual Studio Code terminal, you will see the applied changes but the font is not supported.
+13. Configure VSCode
+--------------------
+
+ #. Support the custom font in VSCode terminal
 
     Go to VSCode settings and search for ``terminal.integrated.fontFamily`` and paste there ``'SourceCodePro+Powerline+Awesome+Regular'`` (**make sure to use quotes**)
+
+#. Configure launching VSCode with terminal ``code`` command
+
+    Add this line to your .zshrc file
+
+    ``code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}``
