@@ -241,5 +241,5 @@ Minor things that are very convenient
 
     Now your terminal will be allways be running in the background and regardless of which screen you are on you can toggle pull it down/up with ``Ctrl+~`` shortcut
     
-    If you need the settings, use zz shortcut when terminal window is on screen
+    If you need the settings, use ``Cmd+,``` shortcut when terminal window is on screen
 
