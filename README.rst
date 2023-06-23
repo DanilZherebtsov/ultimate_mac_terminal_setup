@@ -118,23 +118,23 @@ Working with iTerm2 settings.
  #. Apply powerlevel10k
 
     Open .zshrc
-     * Replace the ZSH_THEME="robbyrussell" with ZSH_THEME="powerlevel10k/powerlevel10k"
-     * Restart terminal and it will pop up with configuration wizard: 
-     * answer No to first (font) question 
-     * then logically to all other questions about icons appearance on the screen. 
-     * To set up as featured use following settings:
-      * -> Rainbow 
-      * -> Unicode 
-      * -> 24-hour format 
-      * -> Angled 
-      * -> Sharp 
-      * -> Flat 
-      * -> One Line 
-      * -> Compact 
-      * -> Many icons 
-      * -> Concise 
-      * -> Verbose 
-      * -> Yes
+     * replace the `ZSH_THEME="robbyrussell"` with `ZSH_THEME="powerlevel10k/powerlevel10k"`
+     * restart terminal and it will pop up with configuration wizard
+     * answer `(n)` No to first (font) question
+     * then logically to all other questions about icons appearance on the screen 
+     * further settings are up to you, but the way I set it up in the video are as follows:
+      * Rainbow 
+      * Unicode 
+      * 24-hour format 
+      * Angled 
+      * Sharp 
+      * Flat 
+      * One Line 
+      * Compact 
+      * Many icons 
+      * Concise 
+      * Verbose 
+      * Yes
     You can always re-run this configuration by terminal command: p10k configure
 
 1.  Plugins for terminal
