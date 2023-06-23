@@ -137,15 +137,16 @@ Working with iTerm2 settings.
                 check ``Status bar enabled`` 
                 
                 Select ``Configure Status Bar`` 
-                    Configure what you want to display, I use the following:
+                    Configure what you want to display by dragging the modules down, I use the following:
                     
-                        cpu
+                        CPU
                         
-                        ram
+                        RAM
                         
                         Auto-Rainbow -> Light Colors
-                Advanced
-                    change the background color (use color picker and pick color of iterm window)
+                        
+                        Select ``Advanced``
+                            change the background color (use color picker and pick color of iterm window)
     Settings
         Appearance
             change the ``Status bar location`` to 'Bottom'.
