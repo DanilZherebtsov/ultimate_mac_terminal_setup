@@ -123,18 +123,19 @@ Working with iTerm2 settings.
      * answer ``(n)`` No to first (font) question
      * then logically to all other questions about icons appearance on the screen 
      * further settings are up to you, but the way I set it up in the video are as follows:
-      * Rainbow 
-      * Unicode 
-      * 24-hour format 
-      * Angled 
-      * Sharp 
-      * Flat 
-      * One Line 
-      * Compact 
-      * Many icons 
-      * Concise 
-      * Verbose 
-      * Yes
+      * ``(3)`` Rainbow 
+      * ``(1)`` Unicode 
+      * ``(2)`` 24-hour format 
+      * ``(1)`` Angled 
+      * ``(1)`` Sharp 
+      * ``(1)`` Flat 
+      * ``(1)`` One Line 
+      * ``(1)`` Compact 
+      * ``(2)`` Many icons 
+      * ``(1)`` Concise 
+      * ``(y)`` Yes (Enable Transient Prompt) 
+      * ``(1)`` Verbose 
+      * ``(y)`` Yes (Overwrite ~/.p10k.zsh)
     You can always re-run this configuration by terminal command: p10k configure
 
 1.  Plugins for terminal
