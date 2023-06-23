@@ -207,11 +207,11 @@ Minor things that are very convenient
     Settings
         Keys
             Hotkey
-                Dedicated hotkey
+                select ``Create a Dedicated Hotkey Window``
                 
-                ``Ctrl+~``
+                    input your hotkey ``Ctrl+~``
                 
-                Check ``Floating Window``
+                    check ``Floating Window``
 
 Further setup
 ~~~~~~~~~~~~~
