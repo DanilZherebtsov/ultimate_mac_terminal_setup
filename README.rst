@@ -100,6 +100,14 @@ Working with iTerm2 settings.
     
     iTerm2 Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
 
+    ::
+        iTerm2 Settings
+            Profiles
+                create new profile
+                set as Default
+                delete Default Profile
+
+
  #. Configure colors
 
     Copy contents of danil.itermcolors file in this repo then create your own 'user.itermcolors' file in your home directory and paste the contents of danil.itermcolors file there.
