@@ -4,7 +4,7 @@ Ultimate Mac drop-down Quake-style terminal setup
 =================================================
 Below steps are in support of a YouTube video: link!!!!!
 
-1. Install text editor. 
+1. Install text editor
 -----------------------
 I prefer Visual Studio Code. Download and install on your machine from the `official web-site <https://code.visualstudio.com/download>`_
 
