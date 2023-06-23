@@ -217,8 +217,7 @@ Minor things that are very convenient
 
     Settings
         Profiles
-            Window
-        
+            Window        
                 in the ``Space`` drop-down menu select ``All Spaces``
                 
                 in the ``Screen`` drop-down menu select ``Screen with Cursor``
@@ -226,21 +225,19 @@ Minor things that are very convenient
                 check ``Hide after opening``
 
     In Profiles you will see a new profile ``Hotkey Window`` select it
-        Window 
-            
+        Window             
             Make sure ``Use transparrency`` is checked 
         
             Change the ``Transparency`` level to whatever suits you, I prefer 5
 
- #. Open at computer startup
+ #. Open iTerm2 and hide it at computer startup
 
     With Spotlight open **Login Items** and add iTerm2 to login items
 
     Remove it from dock and Tab-Switcher menu: 
     
         Settings
-            Appearance
-            
+            Appearance            
                 check ``Exclude from Dock and Tab Application Switcher``
 
     Now your terminal will be allways be running in the background and regardless of which screen you are on you can toggle pull it down/up with ``Ctrl+~`` shortcut
