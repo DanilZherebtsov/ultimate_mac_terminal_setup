@@ -115,11 +115,19 @@ Working with iTerm2 settings.
                     Color Presets
                         in ``Color Presets`` drop-down menu select ``Import`` (and select this user.itermcolors file in the home dir)
                         
-                        After import in ``Color Presets`` drop-down menu select this 'user' color theme
+                        after import in ``Color Presets`` drop-down menu select this 'user' color theme
 
  #. Configure fonts
 
-    iTerm2 Settings -> Profiles -> Text -> Font (find SourceCodePro+Powerline...) AND check the 'Use ligatures' checkbox AND increase fontsize to 14
+    iTerm2 Settings
+        Profiles
+            Text
+                Font 
+                    dind ``SourceCodePro+Powerline...``
+                    
+                    check the ``Use ligatures`` checkbox
+                    
+                    increase fontsize to 14
 
  #. Statusbar
 
