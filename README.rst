@@ -213,26 +213,37 @@ Minor things that are very convenient
                 
                     check ``Floating Window``
 
-Further setup
-~~~~~~~~~~~~~
-    iTerm2 Settings -> Profiles -> Window -> 
-        *Space* (All Spaces) 
-        *Screen* (Screen with Cursor) 
-        Check 'Hide after opening'
+ #. Further setup
 
-    In Profiles you will see a new profile *Hotkey Window* select it -> Window 
-        Make sure 'Use transparrency' is checked 
-        Change the 'Transparency' level to whatever suits you, I prefer 5
+    Settings
+        Profiles
+            Window
+        
+                in the ``Space`` drop-down menu select ``All Spaces``
+                
+                in the ``Screen`` drop-down menu select ``Screen with Cursor``
+        
+                check ``Hide after opening``
 
-Open at computer startup
-~~~~~~~~~~~~~~~~~~~~~~~~
-With Spotlight open 'Login Items' and add iTerm2 to login items.
-Remove it from dock and Tab-Switcher menu: iTerm2 Settings -> Appearance -> check Exclude from Dock...
+    In Profiles you will see a new profile ``Hotkey Window`` select it
+        Window 
+            
+            Make sure ``Use transparrency`` is checked 
+        
+            Change the ``Transparency`` level to whatever suits you, I prefer 5
 
-This way it will always be available by the Ctrl+~ shortcut and if you need the settings, use 'Cmd+,' shortcut with console window opened
+ #. Open at computer startup
 
-1.  Other useful settings
--------------------------
-Open .zshrc and add: alias ll='ls -lG'
-This enables an 'll' terminal command.
+    With Spotlight open **Login Items** and add iTerm2 to login items
+
+    Remove it from dock and Tab-Switcher menu: 
+    
+        Settings
+            Appearance
+            
+                check ``Exclude from Dock and Tab Application Switcher``
+
+    Now your terminal will be allways be running in the background and regardless of which screen you are on you can toggle pull it down/up with ``Ctrl+~`` shortcut
+    
+    If you need the settings, use zz shortcut when terminal window is on screen
 
