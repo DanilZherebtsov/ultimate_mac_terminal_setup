@@ -135,7 +135,7 @@ Working with iTerm2 settings.
         Profiles
             Session 
                 check ``Status bar enabled``                 
-                Select ``Configure Status Bar`` 
+                select ``Configure Status Bar`` 
                     Configure what you want to display by dragging the modules down, I use the following:
                     
                         CPU
