@@ -118,9 +118,9 @@ Working with iTerm2 settings.
  #. Apply powerlevel10k
 
     Open .zshrc
-     * replace the `ZSH_THEME="robbyrussell"` with `ZSH_THEME="powerlevel10k/powerlevel10k"`
+     * replace the ``ZSH_THEME="robbyrussell"`` with ``ZSH_THEME="powerlevel10k/powerlevel10k"``
      * restart terminal and it will pop up with configuration wizard
-     * answer `(n)` No to first (font) question
+     * answer ``(n)`` No to first (font) question
      * then logically to all other questions about icons appearance on the screen 
      * further settings are up to you, but the way I set it up in the video are as follows:
       * Rainbow 
