@@ -97,10 +97,8 @@ This theme will help us configure iTerm2 to display information in a convenient 
 Working with iTerm2 settings.
 
  #. Delete default profile
-    
-    iTerm2 Settings -> Profiles -> create new profile, set as default, delete the 'Default' profile
 
-    ::
+    
         iTerm2 Settings
             Profiles
                 create new profile
