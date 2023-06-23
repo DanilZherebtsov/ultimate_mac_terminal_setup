@@ -179,14 +179,13 @@ Working with iTerm2 settings.
 Minor things that are very convenient
 
  #. Autosuggestion plugin
-
     This plugin will add the command autosuggestion to terminal which user can use with 'tab'
 
     .. code-block::
 
         git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-    Open .zshrc in the plugins variable (for now it should only include 'git') add zsh-autosuggestions !!! no comma between plugins in tuple.
+    Open .zshrc in the plugins variable (for now it should look like this ``plugins=(git)``). Add zsh-autosuggestions (!!! no comma between plugins in tuple). The result shoud look like this: ``plugins=(git zsh-autosuggestions)``
 
 syntax-highlighting
 ~~~~~~~~~~~~~~~~~~~~~~
