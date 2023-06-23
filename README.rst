@@ -18,7 +18,7 @@ Look for .zshrc file in your home directory.
 
     touch ~/.zshrc
 
-1. Install xcode developer tools.
+3. Install xcode developer tools.
 ----------------------------------
 Required step for anything related to programming.
 
@@ -81,10 +81,10 @@ For intel macs
 
 8. Install custom font
 ----------------------
-8.1 In browser download font: https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf
-8.2 Open 'font book' on a mac (search 'font book' in spotlight) and drag&drop this font from downloads folder.
+ * In browser download font `here <https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf>`_
+ * Open 'font book' on a mac (search 'font book' in spotlight) and drag&drop this font from downloads folder.
 
-9. Install powerline10k theme
+1. Install powerline10k theme
 -----------------------------
 This theme will help us configure iTerm2 to display information in a convenient way.
 
