@@ -97,8 +97,7 @@ This theme will help us configure iTerm2 to display information in a convenient 
 Working with iTerm2 settings.
 
  #. Delete default profile
-
-    
+  
         iTerm2 Settings
             Profiles
                 create new profile
@@ -108,9 +107,14 @@ Working with iTerm2 settings.
 
  #. Configure colors
 
-    Copy contents of danil.itermcolors file in this repo then create your own 'user.itermcolors' file in your home directory and paste the contents of danil.itermcolors file there.
+    Copy contents of danil.itermcolors file in this repo then create your own 'user.itermcolors' file in your home directory and paste the contents of danil.itermcolors file there. Then in iTerm2 go to:
 
-    iTerm2 Settings -> Profiles -> Colors -> Color Presets -> Import (and chose this user.itermcolors file in the home dir) -> after import in Color Presets select this 'user' color theme
+        iTerm2 Settings
+            Profiles
+                Colors
+                    Color Presets
+                        Import (and chose this user.itermcolors file in the home dir)
+                        after import in Color Presets select this 'user' color theme
 
  #. Configure fonts
 
