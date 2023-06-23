@@ -252,4 +252,5 @@ Minor things that are very convenient
  #. Configure launching VSCode with terminal ``code`` command
 
     Add this line to your .zshrc file
+    
     ``code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}``
