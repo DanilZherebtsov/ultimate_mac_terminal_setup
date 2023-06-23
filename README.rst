@@ -185,27 +185,33 @@ Minor things that are very convenient
 
         git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-    Open .zshrc in the plugins variable (for now it should look like this ``plugins=(git)``). Add zsh-autosuggestions (!!! no comma between plugins in tuple). The result shoud look like this: ``plugins=(git zsh-autosuggestions)``
+    Open .zshrc and in the plugins variable (for now it should look like this ``plugins=(git)``). Add zsh-autosuggestions (!!! no comma between plugins in tuple). The result shoud look like this: ``plugins=(git zsh-autosuggestions)``
 
-syntax-highlighting
-~~~~~~~~~~~~~~~~~~~~~~
+ #. syntax-highlighting
+    This plugin will highlight syntax in terminal
+    .. code-block::
 
-.. code-block::
+        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    Open .zshrc and in the plugins variable add zsh-syntax-highlighting. At this step plugins variable should look like this: ``plugins=(git zsh-autosuggestions zsh-syntax-highlighting)``
 
-Open .zshrc in the plugins variable add zsh-syntax-highlighting. At this step plugins variable should look like this: plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
+ #. Web-search from terminal with google command
+    This will allow useing terminal to search google
 
-Web-search from terminal with google command
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Open .zshrc and and add ``web-search`` to plugins variable. Now your plugins will look like this ``plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)``
 
-Open .zshrc and add web-search plugin to plugins variable: plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
-
-1.  Drop-down Quake-style mode
+12.  Drop-down Quake-style mode
 ------------------------------
-Configure shortcut 
-~~~~~~~~~~~~~~~~~~
-iTerm2 Settings -> Keys -> Hotkey -> Dedicated hotkey -> Ctrl+~ -> Check 'Floating Window'.
+#. Configure shortcut 
+
+    Settings
+        Keys
+            Hotkey
+                Dedicated hotkey
+                
+                ``Ctrl+~``
+                
+                Check ``Floating Window``
 
 Further setup
 ~~~~~~~~~~~~~
