@@ -113,8 +113,9 @@ Working with iTerm2 settings.
             Profiles
                 Colors
                     Color Presets
-                        Import (and chose this user.itermcolors file in the home dir)
-                        after import in Color Presets select this 'user' color theme
+                        in ``Color Presets`` drop-down menu select ``Import`` (and select this user.itermcolors file in the home dir)
+                        
+                        After import in ``Color Presets`` drop-down menu select this 'user' color theme
 
  #. Configure fonts
 
