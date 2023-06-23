@@ -134,8 +134,7 @@ Working with iTerm2 settings.
     Settings
         Profiles
             Session 
-                check ``Status bar enabled`` 
-                
+                check ``Status bar enabled``                 
                 Select ``Configure Status Bar`` 
                     Configure what you want to display by dragging the modules down, I use the following:
                     
