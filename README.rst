@@ -135,10 +135,15 @@ Working with iTerm2 settings.
         Profiles
             Session 
                 check ``Status bar enabled`` 
-                configure Status Bar to display what you want, I use the following:
-                    cpu
-                    ram
-                    Auto-Rainbow -> Light Colors
+                
+                Select ``Configure Status Bar`` 
+                    Configure what you want to display, I use the following:
+                    
+                        cpu
+                        
+                        ram
+                        
+                        Auto-Rainbow -> Light Colors
                 Advanced
                     change the background color (use color picker and pick color of iterm window)
     Settings
