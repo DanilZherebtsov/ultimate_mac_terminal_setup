@@ -98,7 +98,7 @@ Working with iTerm2 settings.
 
  #. Delete default profile
   
-        iTerm2 Settings
+        Settings
             Profiles
                 create new profile
                 set as Default
@@ -109,7 +109,7 @@ Working with iTerm2 settings.
 
     Copy contents of danil.itermcolors file in this repo then create your own 'user.itermcolors' file in your home directory and paste the contents of danil.itermcolors file there. Then in iTerm2 go to:
 
-        iTerm2 Settings
+        Settings
             Profiles
                 Colors
                     Color Presets
@@ -119,7 +119,7 @@ Working with iTerm2 settings.
 
  #. Configure fonts
 
-    iTerm2 Settings
+    Settings
         Profiles
             Text
                 Font 
@@ -131,7 +131,7 @@ Working with iTerm2 settings.
 
  #. Statusbar
 
-    iTerm2 Settings
+    Settings
         Profiles
             Session 
                 check ``Status bar enabled`` 
@@ -174,19 +174,19 @@ Working with iTerm2 settings.
       * ``(y)`` Yes (Overwrite ~/.p10k.zsh)
     You can always re-run this configuration by terminal command: p10k configure
 
-1.  Plugins for terminal
+11.  Plugins for terminal
 ------------------------
-These will make life easier
+Minor things that are very convenient
 
-Autosuggestion plugin
-~~~~~~~~~~~~~~~~~~~~~~~~~
-This plugin will add the command autosuggestion to terminal which user can use with 'tab'
+ #. Autosuggestion plugin
 
-.. code-block::
+    This plugin will add the command autosuggestion to terminal which user can use with 'tab'
 
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    .. code-block::
 
-Open .zshrc in the plugins variable (for now it should only include 'git') add zsh-autosuggestions !!! no comma between plugins in tuple.
+        git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+    Open .zshrc in the plugins variable (for now it should only include 'git') add zsh-autosuggestions !!! no comma between plugins in tuple.
 
 syntax-highlighting
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -202,7 +202,7 @@ Web-search from terminal with google command
 
 Open .zshrc and add web-search plugin to plugins variable: plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
-12. Drop-down Quake-style mode
+1.  Drop-down Quake-style mode
 ------------------------------
 Configure shortcut 
 ~~~~~~~~~~~~~~~~~~
