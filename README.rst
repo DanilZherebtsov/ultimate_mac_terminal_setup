@@ -92,7 +92,13 @@ This theme will help us configure iTerm2 to display information in a convenient 
 
     git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
-10. Configure iTerm2
+If you don't have git on your machine, install it with brew:
+
+.. code-block::
+
+    brew install git
+
+1.  Configure iTerm2
 -------------------
 Working with iTerm2 settings.
 
