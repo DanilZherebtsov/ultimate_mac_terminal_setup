@@ -6,19 +6,19 @@ Below steps are in support of a YouTube video: link!!!!!
 
 1. Install text editor. 
 -----------------------
-I prefer Visual Studio Code.
-Just google it, download and install on your machine from the official web-site.
+I prefer Visual Studio Code. Download and install on your machine from the `official web-site <https://code.visualstudio.com/download>`_
 
 2. Create a .zshrc file
 -----------------------
-Check your home directory with finder, make sure to display hidden files with 'cmd+shift+.' command.
-If you don't have .zshrc file in your home directory, create it with touch command in terminal.
+Look for .zshrc file in your home directory.
+   
+   .. note:: make sure to display hidden files with ``cmd+shift+.`` command. If you don't have .zshrc file in your home directory, create it with touch command in terminal.
 
 .. code-block::
 
     touch ~/.zshrc
 
-3. Install xcode developer tools.
+1. Install xcode developer tools.
 ----------------------------------
 Required step for anything related to programming.
 
