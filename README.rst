@@ -254,7 +254,7 @@ Minor things that are very convenient
 
  #. Support the custom font in VSCode terminal
     
-    Go to VSCode settings and search for ``terminal.integrated.fontFamily`` and paste there ``'SourceCodePro+Powerline+Awesome+Regular'`` (**make sure to use quotes**)
+    Go to VSCode settings and search for ``terminal.integrated.fontFamily`` and paste there ``'SourceCodePro+Powerline+Awesome Regular'`` (**make sure to use quotes**)
 
  #. Configure launching VSCode with terminal ``code`` command
 
