@@ -2,7 +2,7 @@
 
 Ultimate Mac drop-down Quake-style terminal setup
 =================================================
-Below steps are in support of a YouTube video: link!!!!!
+Below steps are supporting a YouTube `video <https://youtu.be/yVZg547GiYg>`_
 
 1. Install text editor
 -----------------------
