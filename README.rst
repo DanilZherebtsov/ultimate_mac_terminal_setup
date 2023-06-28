@@ -98,7 +98,7 @@ If you don't have git on your machine, install it with brew:
 
     brew install git
 
-1.  Configure iTerm2
+10.  Configure iTerm2
 -------------------
 Working with iTerm2 settings.
 
